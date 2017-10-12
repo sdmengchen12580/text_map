@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <!--第一个activity的主题-->
+    <style name="blacktitleBar" parent="android:Theme.Black">
+        <item name="android:windowTitleSize">60dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+
+
+    <!--第二个activity的主题-->
+    <style name="alphatitleBar" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+        <!--第三个activity的主题-->
+        <style name="socooltitleBar" parent="android:Theme.Translucent">
+            <item name="android:windowTranslucentStatus">true</item>
+            <item name="android:windowTranslucentNavigation">true</item>
+            <item name="android:background">#01000000</item>
+            <item name="android:windowTitleBackgroundStyle">
+                @android:style/android:Theme.Translucent
+            </item>
+            <item name="android:windowTitleSize">60dp</item>
+        </style>
+
+        <!--dialog的主题-->
+        <style name="dialog" parent="@android:style/Theme.Dialog">
+            <item name="android:windowFrame">@null</item>
+            <!--边框-->
+            <item name="android:windowIsFloating">true</item>
+            <!--是否浮现在activity之上-->
+            <item name="android:windowIsTranslucent">false</item>
+            <!--半透明-->
+            <item name="android:windowNoTitle">true</item>
+            <!--无标题-->
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <!--背景透明-->
+            <item name="android:backgroundDimEnabled">true</item>
+            <!--模糊-->
+        </style>
+
+
+</resources>
